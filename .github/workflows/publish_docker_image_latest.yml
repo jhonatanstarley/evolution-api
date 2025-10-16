@@ -5,6 +5,7 @@ on:
     # Dispara em qualquer tag que começar com "v", ex: v2.3.0, v2.3.5
     tags:
       - 'v*'
+  workflow_dispatch:
 
 jobs:
   build:
