@@ -1,7 +1,7 @@
 services:
   api:
     container_name: evolution_api
-    image: evolution/api:local
+    image: evolution/api:local  # ✅ Esse está correto (local)
     build: .
     restart: always
     ports:
@@ -17,7 +17,7 @@ services:
 
   frontend:
     container_name: evolution_frontend
-    image: evolution/manager:local
+    image: evolution/manager:local  # ✅ Esse está correto (local)
     build: ./evolution-manager-v2
     restart: always
     ports:
@@ -27,7 +27,6 @@ services:
 
 volumes:
   evolution_instances:
-
 
 networks:
   evolution-net:

@@ -3,7 +3,7 @@ version: "3.8"
 services:
   api:
     container_name: evolution_api
-    image: evoapicloud/evolution-api:latest
+    image: jhonatanstarley/evolution-api:latest  # ✅ MUDOU AQUI
     restart: always
     depends_on:
       - redis
@@ -22,7 +22,7 @@ services:
 
   frontend:
     container_name: evolution_frontend
-    image: evoapicloud/evolution-manager:latest
+    image: evoapicloud/evolution-manager:latest  # ✅ Esse pode deixar
     restart: always
     ports:
       - "3000:80"
