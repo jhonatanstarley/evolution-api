@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   evolution_v2:
-    image: evoapicloud/evolution-api:v2.3.5
+    image: jhonatanstarley/evolution-api:latest  # ✅ CORRIGIDO
     volumes:
       - evolution_instances:/evolution/instances
     networks:
@@ -144,3 +144,4 @@ networks:
   network_public:
     external: true
     name: network_public
+    
